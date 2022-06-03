@@ -1,0 +1,27 @@
+
+@mixin custom-padding($padding-x: $container-padding-x) {
+    padding-right: $padding-x;
+    padding-left: $padding-x;
+  }
+  
+@mixin main-btn($cst-width: $width-cstm) {
+  width:$cst-width;
+  font-size:2rem;
+  color:$white;
+  background:$purple;
+  height: 44px;
+}
+
+@mixin make-container($padding-x: $container-padding-x) {
+    width: 100%;
+    padding-right: $padding-x;
+    padding-left: $padding-x;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+@mixin min1200{
+    @media(min-width:1200px){
+     @content;
+    }  
+}

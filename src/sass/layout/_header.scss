@@ -1,0 +1,32 @@
+nav.navbar{
+    padding-top:65px;
+    height:30px;
+    @include min1200{
+        @include custom-padding(130px);
+    };
+    @include custom-padding(40px);
+        & ul{
+        margin-left:44px;
+        width:420px;
+        height:auto;
+        display: flex;
+        justify-content:space-between;
+            & li{
+                font-size:2rem;
+                display: flex;
+                justify-content:flex-start;
+                    & a.nav-link{
+                        padding: 0px!important;
+                        font-size: 20px;
+                   }
+            }
+        }
+}
+
+.logo_container img{
+    width:225px;
+}
+button.main_btn{
+    @include main-btn(110px);
+    border-radius:10px
+}

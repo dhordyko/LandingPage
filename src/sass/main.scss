@@ -1,0 +1,28 @@
+/* Import SCSS Structure*/
+//Bootstrap styles
+@import "node_modules/bootstrap/scss/bootstrap";
+@import 'blocks/*.scss';
+@import 'abstracts/*.scss';
+@import 'components/*.scss';
+@import 'layout/*.scss';
+*,
+*::after,
+*::before{
+    margin:0px;
+    padding:0px;
+    box-sizing: inherit;
+    font-family: 'Manrope', sans-serif;
+}
+html{
+    // size of 1rem 
+    font-size: 62.5%;
+}
+body img.test-layout {
+    position:absolute;
+    width:100vw;
+    opacity: .5;
+
+}
+
+
+
