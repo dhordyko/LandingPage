@@ -4,11 +4,11 @@
     padding-left: $padding-x;
   }
   
-@mixin main-btn($cst-width: $width-cstm) {
+@mixin main-btn($cst-width: $width-cstm, $bg-color:$color, $cs-color:$cs-color) {
   width:$cst-width;
   font-size:2rem;
-  color:$white;
-  background:$purple;
+  color:$cs-color;
+  background:$bg-color;
   height: 44px;
 }
 
@@ -24,4 +24,14 @@
     @media(min-width:1200px){
      @content;
     }  
+}
+@mixin min1300{
+  @media(min-width:1300px){
+   @content;
+  }  
+}
+@mixin min950{
+  @media(min-width:950px){
+   @content;
+  }  
 }

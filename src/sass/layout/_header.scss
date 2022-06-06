@@ -1,5 +1,8 @@
 nav.navbar{
-    padding-top:65px;
+    @include min950{
+        padding-top:65px;
+    }
+    padding-top:35px;
     height:30px;
     @include min1200{
         @include custom-padding(130px);
@@ -27,6 +30,15 @@ nav.navbar{
     width:225px;
 }
 button.main_btn{
-    @include main-btn(110px);
+    @include main-btn(110px, $purple,white);
     border-radius:10px
+}
+button.main_btn.transparent{
+    @include main-btn(110px,$transparent,black);
+}
+@media(min-width:900px) and (max-width:1100px){
+    button.main_btn{
+        @include main-btn(80px, $purple,white);
+        border-radius:10px
+    }
 }
