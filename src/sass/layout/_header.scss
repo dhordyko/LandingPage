@@ -2,12 +2,11 @@ nav.navbar{
     @include min991{
         & {
             padding-top:65px;
-        }
-      
+        }      
     }
     @include max650{
-        @include custom-padding(25px);
-        .logo_container img {
+        @include custom-padding(20px);
+        & .logo_container img {
             max-width: 100%;
             height: auto;
             width: 140px;
@@ -15,6 +14,7 @@ nav.navbar{
         .navbar-toggler{
             padding:0px;
         }
+        padding-top:20px;
     }
     padding-top:35px;
     height:30px;

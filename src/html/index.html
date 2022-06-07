@@ -8,10 +8,17 @@
         <title>Document</title>
     </head>
     <body>
-       <img class="test-layout" src="../img/LandingPage.jpg"/>
-        @@include("chunk/header.html")
-        @@loop("chunk/news-items.html", "../../data/data.json")
-        @@include("chunk/footer.html")
+         <img class="test-layout" src="../img/LandingPage.jpg"/>
+        <div id="page-container">
+           <div id="wrap-container">
+            @@include("chunk/header.html")
+            @@loop("chunk/news-items.html", "../../data/data.json")
+           </div> 
+           @@include("chunk/footer.html")
+        </div>
+      
+        
+    
  
         <script type="text/javascript" src="../js/jquery.min.js"></script>
         <script type="text/javascript" src="../js/bootstrap.min.js"></script>

@@ -1,0 +1,38 @@
+footer{
+    @include min1200{
+        @include custom-padding(130px);
+    };
+    @include custom-padding(35px);
+ & .custom_container > ul{
+     display: flex;
+     width:100%;  
+     list-style: none; 
+     & > li.list-item > div{
+        width: max-content;
+        margin-left: auto;
+        padding:0px 20px;
+     }
+     & > li.list-item {
+         padding:0px;
+         margin:0px;
+         justify-content:end;
+         &:nth-of-type(1){
+            width:25%; 
+         }
+         &:nth-of-type(4){
+            width:30%; 
+         }
+         &:nth-of-type(2){
+            width:25%; 
+         }
+         &:nth-of-type(3){
+            width:30%; 
+         } 
+        background:green  
+     }
+ }
+ & .custom_container > ul > li ul {
+    list-style: none; 
+ }
+}
+

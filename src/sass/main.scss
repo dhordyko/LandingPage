@@ -3,6 +3,7 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 @import "node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "node_modules/@fortawesome/fontawesome-free/scss/brands";
 @import 'blocks/*.scss';
 @import 'abstracts/*.scss';
 @import 'components/*.scss';
@@ -14,12 +15,28 @@
     margin:0px;
     padding:0px;
     box-sizing: inherit;
- 
+}
+body h1{
+font-size:54px
+}
+body h2{
+    font-size:32px  
+}
+body h3{
+    font-size:20px    
+}
+body h4{
+    font-size:14px    
 }
 html{
     // size of 1rem 
     font-size: 62.5%;
 
+}
+body{
+ height:100%;
+ width:100%;
+ 
 }
 @media(min-width:900px) and (max-width:1100px){
     html{
@@ -31,8 +48,24 @@ body img.test-layout {
     position:absolute;
     width:100vw;
     opacity: .5;
-
 }
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;   
+  }
+  
+  footer {
+    position: relative;
+    bottom: 0;
+    background: red;
+    height: 310px;
+    max-width: 100%;  
+    margin-top: 5131px;    
+  }
 
 
 
