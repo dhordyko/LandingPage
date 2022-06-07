@@ -30,8 +30,18 @@
    @content;
   }  
 }
-@mixin min950{
-  @media(min-width:950px){
+@mixin min991{
+  @media(min-width:991px){
+   @content;
+  }  
+}
+@mixin max990{
+  @media(max-width:990px){
+   @content;
+  }  
+}
+@mixin max650{
+  @media(max-width:650px){
    @content;
   }  
 }
